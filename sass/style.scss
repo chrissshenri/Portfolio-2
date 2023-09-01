@@ -1,0 +1,145 @@
+@import 'variables.scss';
+@import 'home.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 2.4rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media(max-width: 767px) {
+    .left-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(min-width: 768px) {
+    .main {
+        margin-top: 11rem;
+    }
+    .h1-item {
+        font-size: 1.8rem;
+    }
+    .nav-item {
+        display: flex;
+        gap: 4.5rem;
+    }
+    .menu-hamburger-item {
+        display: none;
+    }
+    .picture-apresentation-item {
+        display: block;
+    }
+    .main {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .left-main {
+        align-items: flex-start;
+    }
+    .apresentation-item {
+        align-items: flex-start;    
+    }
+    .h2-item {
+        max-width: 23rem;
+        text-align: left;
+    }
+    .span-item-hero-content {
+        line-height: 3.2rem;
+        margin-top: 3rem;
+    }
+    .contacts {
+        gap: 8rem;
+    }
+    .contacts-item {
+        max-width: 13rem;
+    }
+    .img-item {
+        max-width: 7rem;
+    }
+}
+
+@media(min-width: 1440px) {
+    .header {
+        justify-content: space-around;
+    }
+    .h1-item  {
+        font-size: 2.6rem;
+    }
+    a {
+        font-size: 1.4rem;
+    }
+    .h2-item {
+        font-size: 3.2rem;
+    }
+    .span-item-header {
+        font-size: 1.8rem;
+    }
+    button {
+        max-width: 14rem;
+        font-size: 1.4rem;
+    }
+    .btn-contact {
+        min-width: 16rem;
+    }
+    .h3-item {
+        margin-top: 12.7rem;
+        font-size: 3.2rem;
+    }
+    .main {
+        margin-top: 16rem;
+    }
+    .span-item-hero-content {
+        margin-bottom: 8.5rem;
+        
+    }
+    .flex-projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .flex-services {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 4.5rem;
+    }
+    .card-item-project {
+        min-width: 30rem;
+    }
+    .title-project {
+        font-size: 1.8rem;
+    }
+    .technologies {
+        font-size: 1.4rem;
+        margin-top: .6rem;
+    }
+    .card-item-project {
+        min-height: 13rem;
+    }
+    .flex-skills {
+        gap: 5.1rem;
+    }
+    .card-content-item-skills {
+        min-width: 15rem;
+        max-width: 15rem;
+    }
+}
